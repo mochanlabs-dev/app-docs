@@ -139,7 +139,6 @@ function pager(page) {
     next ? `<a class="next" href="${next.url}"><span>Next</span>${esc(next.title)}</a>` : '<span></span>'}</nav>`
 }
 
-const LOGO = `<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16"/><path d="M6 20 9 8h6l3 12"/><path d="M12 8V4"/><circle cx="12" cy="3" r="1"/></svg>`
 
 const withBase = (html) => BASE ? html.replace(/(href|src)="\/(?!\/)/g, `$1="${BASE}/`) : html
 
@@ -152,7 +151,7 @@ function layoutRaw(page) {
   const title = isHome ? `${SITE.name} — ${SITE.company}` : `${page.title} — ${SITE.name}`
   const desc = page.summary || 'How to install, set up and use Weighbridge.'
   return `<!doctype html>
-<html lang="en" data-theme="auto" data-base="${BASE}">
+<html lang="en" data-theme="light" data-base="${BASE}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -160,13 +159,14 @@ function layoutRaw(page) {
 <meta name="description" content="${esc(desc)}">
 <script>try{var t=localStorage.getItem('wb-docs-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 <link rel="stylesheet" href="/assets/docs.css">
-<link rel="icon" href="data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#1d4fb3"/><path d="M8 25h16M10 25l3-12h6l3 12M16 13V8" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>')}">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/logo.png">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="topbar">
   <button type="button" class="icon-btn menu-btn" aria-label="Open navigation" aria-controls="sidebar">☰</button>
-  <a class="brand" href="/">${LOGO}<span>Weighbridge <em>Docs</em></span></a>
+  <a class="brand" href="/"><img src="/assets/logo.png" alt="" width="32" height="32"><span>Weighbridge <em>Docs</em></span></a>
   <div class="search">
     <input id="q" type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search the docs">
     <kbd>/</kbd>

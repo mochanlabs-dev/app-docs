@@ -29,11 +29,11 @@ for (const a of apps) {
 
 fs.writeFileSync(path.join(DIST, 'index.html'), `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="${BASE}/weighbridge/assets/favicon.png">
 <title>Mochan Labs — Product documentation</title>
 <meta name="description" content="User documentation for Mochan Labs applications.">
 <style>
 :root{--bg:#f5f7fb;--panel:#fff;--text:#1a2233;--muted:#5b6579;--line:#e3e7ef;--brand:#1d4fb3}
-@media(prefers-color-scheme:dark){:root{--bg:#0f1420;--panel:#171e2e;--text:#e6eaf3;--muted:#9aa5bb;--line:#263049;--brand:#6b9bff}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 "Segoe UI",system-ui,sans-serif}
 main{max-width:760px;margin:0 auto;padding:64px 20px}h1{font-size:34px;margin:0 0 8px;letter-spacing:-.02em}
 p.lead{color:var(--muted);margin:0 0 34px;font-size:18px}.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
