@@ -1,0 +1,14 @@
+{
+  "name": "weighbridge-docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Weighbridge user documentation (static site)",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs && node tools/serve.mjs"
+  },
+  "dependencies": {
+    "marked": "12.0.2"
+  }
+}
