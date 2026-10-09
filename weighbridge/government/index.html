@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-base="/app-docs/weighbridge">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Government portal (MDTSS) — Weighbridge Docs</title>
+<meta name="description" content="Send each weighment to the Uttarakhand MDTSS portal, with test mode and automatic retries.">
+<script>try{var t=localStorage.getItem('wb-docs-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="stylesheet" href="/app-docs/weighbridge/assets/docs.css">
+<link rel="icon" type="image/png" href="/app-docs/weighbridge/assets/favicon.png">
+<link rel="apple-touch-icon" href="/app-docs/weighbridge/assets/logo.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <button type="button" class="icon-btn menu-btn" aria-label="Open navigation" aria-controls="sidebar">☰</button>
+  <a class="brand" href="/app-docs/weighbridge/"><img src="/app-docs/weighbridge/assets/logo.png" alt="" width="32" height="32"><span>Weighbridge <em>Docs</em></span></a>
+  <div class="search">
+    <input id="q" type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search the docs">
+    <kbd>/</kbd>
+    <div id="results" class="results" hidden></div>
+  </div>
+  <button type="button" class="icon-btn theme-btn" aria-label="Switch light / dark">◐</button>
+</header>
+<div class="shell">
+  <aside id="sidebar" class="sidebar" aria-label="Documentation">
+    <a class="nav-home" href="/app-docs/weighbridge/">Overview</a>
+    <div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Start here<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/install/">Install Weighbridge</a></li><li><a href="/app-docs/weighbridge/activate/">Activate your license</a></li><li><a href="/app-docs/weighbridge/sign-in/">Sign in and change your password</a></li><li><a href="/app-docs/weighbridge/tour/">A quick tour of the screens</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Daily work<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/weigh/">Weigh a vehicle</a></li><li><a href="/app-docs/weighbridge/sell/">Bill a sale</a></li><li><a href="/app-docs/weighbridge/purchase/">Record a purchase</a></li><li><a href="/app-docs/weighbridge/receipts/">Print and reprint receipts</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Troubleshooting<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/troubleshooting/">Fix common problems</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Setup<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/company/">Company details</a></li><li><a href="/app-docs/weighbridge/scale/">Weighbridge and COM port</a></li><li><a href="/app-docs/weighbridge/materials/">Materials, GST and HSN</a></li><li><a href="/app-docs/weighbridge/parties/">Parties and party rates</a></li><li><a href="/app-docs/weighbridge/vehicles/">Vehicles</a></li><li><a href="/app-docs/weighbridge/printer/">Printer and slip layout</a></li><li><a href="/app-docs/weighbridge/users/">Users, roles and permissions</a></li><li><a href="/app-docs/weighbridge/workflow/">Workflow settings</a></li><li><a href="/app-docs/weighbridge/cameras-rfid/">Cameras and RFID</a></li></ul></div>
+<div class="nav-group open"><button type="button" class="nav-cat" aria-expanded="true">Integrations<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/tally/">Tally</a></li><li><a href="/app-docs/weighbridge/government/" aria-current="page">Government portal (MDTSS)</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Reports &amp; records<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/reports/">Reports</a></li><li><a href="/app-docs/weighbridge/sync-status/">Sync status</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Looking after the system<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/backups/">Back up your data</a></li><li><a href="/app-docs/weighbridge/updates/">Update the app</a></li><li><a href="/app-docs/weighbridge/license-renewal/">License renewal and expiry notices</a></li><li><a href="/app-docs/weighbridge/multi-machine/">Use more than one computer</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Reference<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/glossary/">Glossary</a></li><li><a href="/app-docs/weighbridge/support/">Get help</a></li></ul></div>
+  </aside>
+  <div class="scrim" hidden></div>
+  <main id="main" class="content">
+    <article>
+      <div class="crumbs"><a href="/app-docs/weighbridge/">Docs</a> <span>/</span> Integrations</div><h1>Government portal (MDTSS)</h1><p class="lead">Send each weighment to the Uttarakhand MDTSS portal, with test mode and automatic retries.</p>
+      <p>If your weighbridge must report to the Uttarakhand <strong>MDTSS</strong> portal, Weighbridge sends each weighment for you, always with the weight in <strong>kilograms</strong>.</p>
+<h2 id="set-up"><a class="anchor" href="#set-up" aria-label="Link to this section">#</a>Set up</h2>
+<p>The department issues credentials for each weighbridge: an <strong>API key</strong>, a <strong>weighbridge number (WBNo)</strong>, a <strong>Lessee ID</strong> and a <strong>refresh token</strong>. Open <strong>Administration → MDTSS govt portal</strong>.</p>
+<p><figure class="shot"><button type="button" class="zoom" aria-label="Enlarge screenshot"><img src="/app-docs/weighbridge/img/mdtss.png" alt="MDTSS settings" loading="lazy"></button><figcaption>Credentials issued by the department. The switch at the top controls whether anything is really sent.</figcaption></figure></p>
+<ol>
+<li>Enter the <strong>API key</strong>, <strong>Weighbridge Number (WBNo)</strong>, <strong>Lessee ID</strong> and <strong>Refresh token</strong>. Leave the <strong>Base URL</strong> and <strong>Refresh token path</strong> as they are unless the department tells you otherwise.</li>
+<li>Press <strong>Save</strong>.</li>
+<li>Scroll to <strong>Send Test Submission</strong>, fill in a test vehicle and weights and press the button. It sends a made-up ticket, not tied to any real weighment. You can repeat it safely while you sort out credentials.</li>
+<li>When the test is accepted, switch on submission at the top (the label changes from <em>Not submitting to MDTSS (logged only)</em>).</li>
+</ol>
+<div class="callout callout-note"><div class="callout-title">Note</div><p>While submission is off, weighments are only <strong>logged</strong>. Nothing reaches the portal. Turn it on only once the test works.</p>
+</div>
+
+
+<h2 id="day-to-day"><a class="anchor" href="#day-to-day" aria-label="Link to this section">#</a>Day to day</h2>
+<ul>
+<li>Sending happens in the background after each weighment.</li>
+<li><strong>Govt Sync</strong> (top bar) sends anything waiting right now.</li>
+<li>If the portal or internet is down, weighments wait and retry. See <a href="/app-docs/weighbridge/sync-status/">Sync status</a> to review them.</li>
+</ul>
+
+    </article>
+    <nav class="pager" aria-label="Previous and next"><a class="prev" href="/app-docs/weighbridge/tally/"><span>Previous</span>Tally</a><a class="next" href="/app-docs/weighbridge/reports/"><span>Next</span>Reports</a></nav>
+    <footer class="foot">
+      <span>© 2026 Mochan Labs · <a href="https://mochanlabs.com" target="_blank" rel="noopener">mochanlabs.com</a> · <a href="mailto:mochanlabs@gmail.com">mochanlabs@gmail.com</a></span>
+      <span>Applies to Weighbridge 0.2.x</span>
+    </footer>
+  </main>
+  <aside class="toc-col"></aside>
+</div>
+<div id="lightbox" class="lightbox" hidden><img alt=""><button type="button" aria-label="Close">×</button></div>
+<script src="/app-docs/weighbridge/assets/docs.js"></script>
+</body>
+</html>

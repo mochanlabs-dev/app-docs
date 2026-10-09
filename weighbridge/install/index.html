@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-base="/app-docs/weighbridge">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Install Weighbridge — Weighbridge Docs</title>
+<meta name="description" content="Two steps — SQL Server Express, then the Weighbridge installer. Windows 10 or 11.">
+<script>try{var t=localStorage.getItem('wb-docs-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="stylesheet" href="/app-docs/weighbridge/assets/docs.css">
+<link rel="icon" type="image/png" href="/app-docs/weighbridge/assets/favicon.png">
+<link rel="apple-touch-icon" href="/app-docs/weighbridge/assets/logo.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <button type="button" class="icon-btn menu-btn" aria-label="Open navigation" aria-controls="sidebar">☰</button>
+  <a class="brand" href="/app-docs/weighbridge/"><img src="/app-docs/weighbridge/assets/logo.png" alt="" width="32" height="32"><span>Weighbridge <em>Docs</em></span></a>
+  <div class="search">
+    <input id="q" type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search the docs">
+    <kbd>/</kbd>
+    <div id="results" class="results" hidden></div>
+  </div>
+  <button type="button" class="icon-btn theme-btn" aria-label="Switch light / dark">◐</button>
+</header>
+<div class="shell">
+  <aside id="sidebar" class="sidebar" aria-label="Documentation">
+    <a class="nav-home" href="/app-docs/weighbridge/">Overview</a>
+    <div class="nav-group open"><button type="button" class="nav-cat" aria-expanded="true">Start here<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/install/" aria-current="page">Install Weighbridge</a></li><li><a href="/app-docs/weighbridge/activate/">Activate your license</a></li><li><a href="/app-docs/weighbridge/sign-in/">Sign in and change your password</a></li><li><a href="/app-docs/weighbridge/tour/">A quick tour of the screens</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Daily work<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/weigh/">Weigh a vehicle</a></li><li><a href="/app-docs/weighbridge/sell/">Bill a sale</a></li><li><a href="/app-docs/weighbridge/purchase/">Record a purchase</a></li><li><a href="/app-docs/weighbridge/receipts/">Print and reprint receipts</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Troubleshooting<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/troubleshooting/">Fix common problems</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Setup<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/company/">Company details</a></li><li><a href="/app-docs/weighbridge/scale/">Weighbridge and COM port</a></li><li><a href="/app-docs/weighbridge/materials/">Materials, GST and HSN</a></li><li><a href="/app-docs/weighbridge/parties/">Parties and party rates</a></li><li><a href="/app-docs/weighbridge/vehicles/">Vehicles</a></li><li><a href="/app-docs/weighbridge/printer/">Printer and slip layout</a></li><li><a href="/app-docs/weighbridge/users/">Users, roles and permissions</a></li><li><a href="/app-docs/weighbridge/workflow/">Workflow settings</a></li><li><a href="/app-docs/weighbridge/cameras-rfid/">Cameras and RFID</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Integrations<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/tally/">Tally</a></li><li><a href="/app-docs/weighbridge/government/">Government portal (MDTSS)</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Reports &amp; records<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/reports/">Reports</a></li><li><a href="/app-docs/weighbridge/sync-status/">Sync status</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Looking after the system<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/backups/">Back up your data</a></li><li><a href="/app-docs/weighbridge/updates/">Update the app</a></li><li><a href="/app-docs/weighbridge/license-renewal/">License renewal and expiry notices</a></li><li><a href="/app-docs/weighbridge/multi-machine/">Use more than one computer</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Reference<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/glossary/">Glossary</a></li><li><a href="/app-docs/weighbridge/support/">Get help</a></li></ul></div>
+  </aside>
+  <div class="scrim" hidden></div>
+  <main id="main" class="content">
+    <article>
+      <div class="crumbs"><a href="/app-docs/weighbridge/">Docs</a> <span>/</span> Start here</div><h1>Install Weighbridge</h1><p class="lead">Two steps — SQL Server Express, then the Weighbridge installer. Windows 10 or 11.</p>
+      <h2 id="what-you-need"><a class="anchor" href="#what-you-need" aria-label="Link to this section">#</a>What you need</h2>
+<ul>
+<li>A Windows 10 or 11 computer (64-bit) on the weighbridge.</li>
+<li>Internet <strong>once</strong>, to download SQL Server Express. After that the app works offline (it only needs the internet to check its license and update itself).</li>
+<li>The Weighbridge installer file from Mochan Labs: <code>Weighbridge-Setup-x.y.z.exe</code>.</li>
+<li>Administrator rights on the computer.</li>
+</ul>
+<h2 id="steps"><a class="anchor" href="#steps" aria-label="Link to this section">#</a>Steps</h2>
+<ol>
+<li><strong>Install SQL Server Express.</strong> Download it from Microsoft, run it and choose <strong>Basic</strong>. Accept the defaults and let it finish completely.</li>
+<li><strong>Run the Weighbridge installer.</strong> Accept the one administrator prompt (Windows UAC). It finds SQL Server by itself and sets up the starting database. There is nothing to type.</li>
+<li><strong>Open Weighbridge</strong> from the desktop or Start menu. Continue with <a href="/app-docs/weighbridge/activate/">Activate your license</a>.</li>
+</ol>
+<div class="callout callout-tip"><div class="callout-title">Tip</div><p>Already have SQL Server 2016 or newer on this computer for another reason? Skip step 1. The installer detects it.</p>
+</div>
+
+
+
+<div class="callout callout-note"><div class="callout-title">Note</div><p>If SQL Server isn&#39;t found, the installer says so and stops without installing half a system. Install SQL Server, then run the installer again. It is always safe to run it again, and it <strong>never overwrites an existing database</strong>.</p>
+</div>
+
+
+<h2 id="upgrading"><a class="anchor" href="#upgrading" aria-label="Link to this section">#</a>Upgrading</h2>
+<p>Don&#39;t uninstall. Either let the app update itself (<a href="/app-docs/weighbridge/updates/">Update the app</a>) or run the newer installer over the old one. Your data stays.</p>
+<h2 id="installing-on-more-than-one-computer"><a class="anchor" href="#installing-on-more-than-one-computer" aria-label="Link to this section">#</a>Installing on more than one computer</h2>
+<p>Install Weighbridge on each computer, then link them with <a href="/app-docs/weighbridge/multi-machine/">Use more than one computer</a>.</p>
+
+    </article>
+    <nav class="pager" aria-label="Previous and next"><span></span><a class="next" href="/app-docs/weighbridge/activate/"><span>Next</span>Activate your license</a></nav>
+    <footer class="foot">
+      <span>© 2026 Mochan Labs · <a href="https://mochanlabs.com" target="_blank" rel="noopener">mochanlabs.com</a> · <a href="mailto:mochanlabs@gmail.com">mochanlabs@gmail.com</a></span>
+      <span>Applies to Weighbridge 0.2.x</span>
+    </footer>
+  </main>
+  <aside class="toc-col"><nav class="toc" aria-label="On this page"><div class="toc-title">On this page</div><ul><li class="l2"><a href="#what-you-need">What you need</a></li><li class="l2"><a href="#steps">Steps</a></li><li class="l2"><a href="#upgrading">Upgrading</a></li><li class="l2"><a href="#installing-on-more-than-one-computer">Installing on more than one computer</a></li></ul></nav></aside>
+</div>
+<div id="lightbox" class="lightbox" hidden><img alt=""><button type="button" aria-label="Close">×</button></div>
+<script src="/app-docs/weighbridge/assets/docs.js"></script>
+</body>
+</html>

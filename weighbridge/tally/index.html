@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-base="/app-docs/weighbridge">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tally — Weighbridge Docs</title>
+<meta name="description" content="Post every sale and purchase to Tally automatically, and see exactly why when it can't.">
+<script>try{var t=localStorage.getItem('wb-docs-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="stylesheet" href="/app-docs/weighbridge/assets/docs.css">
+<link rel="icon" type="image/png" href="/app-docs/weighbridge/assets/favicon.png">
+<link rel="apple-touch-icon" href="/app-docs/weighbridge/assets/logo.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <button type="button" class="icon-btn menu-btn" aria-label="Open navigation" aria-controls="sidebar">☰</button>
+  <a class="brand" href="/app-docs/weighbridge/"><img src="/app-docs/weighbridge/assets/logo.png" alt="" width="32" height="32"><span>Weighbridge <em>Docs</em></span></a>
+  <div class="search">
+    <input id="q" type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search the docs">
+    <kbd>/</kbd>
+    <div id="results" class="results" hidden></div>
+  </div>
+  <button type="button" class="icon-btn theme-btn" aria-label="Switch light / dark">◐</button>
+</header>
+<div class="shell">
+  <aside id="sidebar" class="sidebar" aria-label="Documentation">
+    <a class="nav-home" href="/app-docs/weighbridge/">Overview</a>
+    <div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Start here<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/install/">Install Weighbridge</a></li><li><a href="/app-docs/weighbridge/activate/">Activate your license</a></li><li><a href="/app-docs/weighbridge/sign-in/">Sign in and change your password</a></li><li><a href="/app-docs/weighbridge/tour/">A quick tour of the screens</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Daily work<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/weigh/">Weigh a vehicle</a></li><li><a href="/app-docs/weighbridge/sell/">Bill a sale</a></li><li><a href="/app-docs/weighbridge/purchase/">Record a purchase</a></li><li><a href="/app-docs/weighbridge/receipts/">Print and reprint receipts</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Troubleshooting<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/troubleshooting/">Fix common problems</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Setup<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/company/">Company details</a></li><li><a href="/app-docs/weighbridge/scale/">Weighbridge and COM port</a></li><li><a href="/app-docs/weighbridge/materials/">Materials, GST and HSN</a></li><li><a href="/app-docs/weighbridge/parties/">Parties and party rates</a></li><li><a href="/app-docs/weighbridge/vehicles/">Vehicles</a></li><li><a href="/app-docs/weighbridge/printer/">Printer and slip layout</a></li><li><a href="/app-docs/weighbridge/users/">Users, roles and permissions</a></li><li><a href="/app-docs/weighbridge/workflow/">Workflow settings</a></li><li><a href="/app-docs/weighbridge/cameras-rfid/">Cameras and RFID</a></li></ul></div>
+<div class="nav-group open"><button type="button" class="nav-cat" aria-expanded="true">Integrations<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/tally/" aria-current="page">Tally</a></li><li><a href="/app-docs/weighbridge/government/">Government portal (MDTSS)</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Reports &amp; records<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/reports/">Reports</a></li><li><a href="/app-docs/weighbridge/sync-status/">Sync status</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Looking after the system<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/backups/">Back up your data</a></li><li><a href="/app-docs/weighbridge/updates/">Update the app</a></li><li><a href="/app-docs/weighbridge/license-renewal/">License renewal and expiry notices</a></li><li><a href="/app-docs/weighbridge/multi-machine/">Use more than one computer</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Reference<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/glossary/">Glossary</a></li><li><a href="/app-docs/weighbridge/support/">Get help</a></li></ul></div>
+  </aside>
+  <div class="scrim" hidden></div>
+  <main id="main" class="content">
+    <article>
+      <div class="crumbs"><a href="/app-docs/weighbridge/">Docs</a> <span>/</span> Integrations</div><h1>Tally</h1><p class="lead">Post every sale and purchase to Tally automatically, and see exactly why when it can't.</p>
+      <p>Weighbridge posts a voucher to Tally for each completed sale and purchase. If a customer or material is new to Tally, it is created there the first time it&#39;s billed. You don&#39;t set up the chart of accounts by hand.</p>
+<h2 id="connect"><a class="anchor" href="#connect" aria-label="Link to this section">#</a>Connect</h2>
+<p>Open <strong>Administration → Tally setup</strong>. The in-app <strong>Setup guide (PDF)</strong> walks through both sides.</p>
+<p><figure class="shot"><button type="button" class="zoom" aria-label="Enlarge screenshot"><img src="/app-docs/weighbridge/img/tally.png" alt="Tally setup" loading="lazy"></button><figcaption>Connection and ledger names.</figcaption></figure></p>
+<ol>
+<li>In Tally, open the company you want and turn on its connection for other software (the HTTP gateway). Note the <strong>port</strong> Tally listens on.</li>
+<li>In Weighbridge, enter <strong>Host / IP</strong> (<code>localhost</code> if Tally is on this computer) and the <strong>Port</strong>. The default is 9000, but a Tally installation may use another number. Use the one Tally shows.</li>
+<li>Enter the <strong>Company name in Tally</strong> exactly as Tally spells it, then the <strong>GSTIN</strong> and the names of your <strong>Sales</strong>, <strong>Purchase</strong> and <strong>GST</strong> ledgers.</li>
+<li>Press <strong>Save</strong>, then <strong>Test Connection</strong>. This checks that Weighbridge can reach Tally.</li>
+<li>Switch on <strong>Posting real vouchers to Tally</strong>.</li>
+</ol>
+<div class="callout callout-warn"><div class="callout-title">Important</div><p>The company name must match Tally <strong>exactly</strong>. Tally refuses a voucher for a company name it doesn&#39;t recognise.</p>
+</div>
+
+
+<h2 id="syncing"><a class="anchor" href="#syncing" aria-label="Link to this section">#</a>Syncing</h2>
+<ul>
+<li>Vouchers are sent in the background automatically.</li>
+<li><strong>Tally Sync</strong> (top bar) and <strong>Sync Now</strong> (this page) send everything waiting right away, and tell you the result: how many were sent, or why nothing could be, such as <em>Tally isn&#39;t reachable</em>.</li>
+<li>If Tally was closed, nothing is lost. Entries wait and are retried. See <a href="/app-docs/weighbridge/sync-status/">Sync status</a> for the list and reasons.</li>
+</ul>
+<p>The quantity and unit sent to Tally follow the unit you chose in <a href="/app-docs/weighbridge/printer/">Printer and slip layout</a>.</p>
+
+    </article>
+    <nav class="pager" aria-label="Previous and next"><a class="prev" href="/app-docs/weighbridge/cameras-rfid/"><span>Previous</span>Cameras and RFID</a><a class="next" href="/app-docs/weighbridge/government/"><span>Next</span>Government portal (MDTSS)</a></nav>
+    <footer class="foot">
+      <span>© 2026 Mochan Labs · <a href="https://mochanlabs.com" target="_blank" rel="noopener">mochanlabs.com</a> · <a href="mailto:mochanlabs@gmail.com">mochanlabs@gmail.com</a></span>
+      <span>Applies to Weighbridge 0.2.x</span>
+    </footer>
+  </main>
+  <aside class="toc-col"></aside>
+</div>
+<div id="lightbox" class="lightbox" hidden><img alt=""><button type="button" aria-label="Close">×</button></div>
+<script src="/app-docs/weighbridge/assets/docs.js"></script>
+</body>
+</html>

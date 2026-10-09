@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-base="/app-docs/weighbridge">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vehicles — Weighbridge Docs</title>
+<meta name="description" content="Registered vehicles, their RFID tags and saved empty weights.">
+<script>try{var t=localStorage.getItem('wb-docs-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="stylesheet" href="/app-docs/weighbridge/assets/docs.css">
+<link rel="icon" type="image/png" href="/app-docs/weighbridge/assets/favicon.png">
+<link rel="apple-touch-icon" href="/app-docs/weighbridge/assets/logo.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <button type="button" class="icon-btn menu-btn" aria-label="Open navigation" aria-controls="sidebar">☰</button>
+  <a class="brand" href="/app-docs/weighbridge/"><img src="/app-docs/weighbridge/assets/logo.png" alt="" width="32" height="32"><span>Weighbridge <em>Docs</em></span></a>
+  <div class="search">
+    <input id="q" type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search the docs">
+    <kbd>/</kbd>
+    <div id="results" class="results" hidden></div>
+  </div>
+  <button type="button" class="icon-btn theme-btn" aria-label="Switch light / dark">◐</button>
+</header>
+<div class="shell">
+  <aside id="sidebar" class="sidebar" aria-label="Documentation">
+    <a class="nav-home" href="/app-docs/weighbridge/">Overview</a>
+    <div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Start here<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/install/">Install Weighbridge</a></li><li><a href="/app-docs/weighbridge/activate/">Activate your license</a></li><li><a href="/app-docs/weighbridge/sign-in/">Sign in and change your password</a></li><li><a href="/app-docs/weighbridge/tour/">A quick tour of the screens</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Daily work<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/weigh/">Weigh a vehicle</a></li><li><a href="/app-docs/weighbridge/sell/">Bill a sale</a></li><li><a href="/app-docs/weighbridge/purchase/">Record a purchase</a></li><li><a href="/app-docs/weighbridge/receipts/">Print and reprint receipts</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Troubleshooting<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/troubleshooting/">Fix common problems</a></li></ul></div>
+<div class="nav-group open"><button type="button" class="nav-cat" aria-expanded="true">Setup<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/company/">Company details</a></li><li><a href="/app-docs/weighbridge/scale/">Weighbridge and COM port</a></li><li><a href="/app-docs/weighbridge/materials/">Materials, GST and HSN</a></li><li><a href="/app-docs/weighbridge/parties/">Parties and party rates</a></li><li><a href="/app-docs/weighbridge/vehicles/" aria-current="page">Vehicles</a></li><li><a href="/app-docs/weighbridge/printer/">Printer and slip layout</a></li><li><a href="/app-docs/weighbridge/users/">Users, roles and permissions</a></li><li><a href="/app-docs/weighbridge/workflow/">Workflow settings</a></li><li><a href="/app-docs/weighbridge/cameras-rfid/">Cameras and RFID</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Integrations<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/tally/">Tally</a></li><li><a href="/app-docs/weighbridge/government/">Government portal (MDTSS)</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Reports &amp; records<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/reports/">Reports</a></li><li><a href="/app-docs/weighbridge/sync-status/">Sync status</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Looking after the system<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/backups/">Back up your data</a></li><li><a href="/app-docs/weighbridge/updates/">Update the app</a></li><li><a href="/app-docs/weighbridge/license-renewal/">License renewal and expiry notices</a></li><li><a href="/app-docs/weighbridge/multi-machine/">Use more than one computer</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Reference<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/glossary/">Glossary</a></li><li><a href="/app-docs/weighbridge/support/">Get help</a></li></ul></div>
+  </aside>
+  <div class="scrim" hidden></div>
+  <main id="main" class="content">
+    <article>
+      <div class="crumbs"><a href="/app-docs/weighbridge/">Docs</a> <span>/</span> Setup</div><h1>Vehicles</h1><p class="lead">Registered vehicles, their RFID tags and saved empty weights.</p>
+      <p>Open <strong>Masters → Vehicles</strong>.</p>
+<p><figure class="shot"><button type="button" class="zoom" aria-label="Enlarge screenshot"><img src="/app-docs/weighbridge/img/vehicles.png" alt="Vehicles" loading="lazy"></button><figcaption>The vehicle master.</figcaption></figure></p>
+<div class="table-wrap"><table><thead><tr>
+<th>Column</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody><tr>
+<td><strong>Registration</strong></td>
+<td>The vehicle number operators type (or that an RFID tag fills in).</td>
+</tr>
+<tr>
+<td><strong>Code</strong></td>
+<td>Your own short code.</td>
+</tr>
+<tr>
+<td><strong>RFID tag</strong></td>
+<td>The tag on the vehicle, if you use RFID (<a href="/app-docs/weighbridge/cameras-rfid/">Cameras and RFID</a>).</td>
+</tr>
+<tr>
+<td><strong>Stored empty weight</strong></td>
+<td>The vehicle&#39;s known tare. Used for the <em>Known-tare shortcut</em> on the Token page.</td>
+</tr>
+<tr>
+<td><strong>Owner</strong>, <strong>Advance</strong></td>
+<td>Shown if <em>Owner + PAN on vehicles</em> is on in <a href="/app-docs/weighbridge/workflow/">Workflow settings</a>.</td>
+</tr>
+</tbody></table></div>
+<p>Vehicles are also added automatically the first time a new number is weighed.</p>
+<div class="callout callout-note"><div class="callout-title">Note</div><p>A saved empty weight saves a weighing, but a fresh live weighing is always allowed. The shortcut is only a suggestion.</p>
+</div>
+
+
+    </article>
+    <nav class="pager" aria-label="Previous and next"><a class="prev" href="/app-docs/weighbridge/parties/"><span>Previous</span>Parties and party rates</a><a class="next" href="/app-docs/weighbridge/printer/"><span>Next</span>Printer and slip layout</a></nav>
+    <footer class="foot">
+      <span>© 2026 Mochan Labs · <a href="https://mochanlabs.com" target="_blank" rel="noopener">mochanlabs.com</a> · <a href="mailto:mochanlabs@gmail.com">mochanlabs@gmail.com</a></span>
+      <span>Applies to Weighbridge 0.2.x</span>
+    </footer>
+  </main>
+  <aside class="toc-col"></aside>
+</div>
+<div id="lightbox" class="lightbox" hidden><img alt=""><button type="button" aria-label="Close">×</button></div>
+<script src="/app-docs/weighbridge/assets/docs.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-base="/app-docs/weighbridge">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fix common problems — Weighbridge Docs</title>
+<meta name="description" content="What you see, what it means, and what to do. Start at the top of the table.">
+<script>try{var t=localStorage.getItem('wb-docs-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="stylesheet" href="/app-docs/weighbridge/assets/docs.css">
+<link rel="icon" type="image/png" href="/app-docs/weighbridge/assets/favicon.png">
+<link rel="apple-touch-icon" href="/app-docs/weighbridge/assets/logo.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <button type="button" class="icon-btn menu-btn" aria-label="Open navigation" aria-controls="sidebar">☰</button>
+  <a class="brand" href="/app-docs/weighbridge/"><img src="/app-docs/weighbridge/assets/logo.png" alt="" width="32" height="32"><span>Weighbridge <em>Docs</em></span></a>
+  <div class="search">
+    <input id="q" type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search the docs">
+    <kbd>/</kbd>
+    <div id="results" class="results" hidden></div>
+  </div>
+  <button type="button" class="icon-btn theme-btn" aria-label="Switch light / dark">◐</button>
+</header>
+<div class="shell">
+  <aside id="sidebar" class="sidebar" aria-label="Documentation">
+    <a class="nav-home" href="/app-docs/weighbridge/">Overview</a>
+    <div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Start here<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/install/">Install Weighbridge</a></li><li><a href="/app-docs/weighbridge/activate/">Activate your license</a></li><li><a href="/app-docs/weighbridge/sign-in/">Sign in and change your password</a></li><li><a href="/app-docs/weighbridge/tour/">A quick tour of the screens</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Daily work<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/weigh/">Weigh a vehicle</a></li><li><a href="/app-docs/weighbridge/sell/">Bill a sale</a></li><li><a href="/app-docs/weighbridge/purchase/">Record a purchase</a></li><li><a href="/app-docs/weighbridge/receipts/">Print and reprint receipts</a></li></ul></div>
+<div class="nav-group open"><button type="button" class="nav-cat" aria-expanded="true">Troubleshooting<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/troubleshooting/" aria-current="page">Fix common problems</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Setup<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/company/">Company details</a></li><li><a href="/app-docs/weighbridge/scale/">Weighbridge and COM port</a></li><li><a href="/app-docs/weighbridge/materials/">Materials, GST and HSN</a></li><li><a href="/app-docs/weighbridge/parties/">Parties and party rates</a></li><li><a href="/app-docs/weighbridge/vehicles/">Vehicles</a></li><li><a href="/app-docs/weighbridge/printer/">Printer and slip layout</a></li><li><a href="/app-docs/weighbridge/users/">Users, roles and permissions</a></li><li><a href="/app-docs/weighbridge/workflow/">Workflow settings</a></li><li><a href="/app-docs/weighbridge/cameras-rfid/">Cameras and RFID</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Integrations<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/tally/">Tally</a></li><li><a href="/app-docs/weighbridge/government/">Government portal (MDTSS)</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Reports &amp; records<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/reports/">Reports</a></li><li><a href="/app-docs/weighbridge/sync-status/">Sync status</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Looking after the system<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/backups/">Back up your data</a></li><li><a href="/app-docs/weighbridge/updates/">Update the app</a></li><li><a href="/app-docs/weighbridge/license-renewal/">License renewal and expiry notices</a></li><li><a href="/app-docs/weighbridge/multi-machine/">Use more than one computer</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Reference<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/glossary/">Glossary</a></li><li><a href="/app-docs/weighbridge/support/">Get help</a></li></ul></div>
+  </aside>
+  <div class="scrim" hidden></div>
+  <main id="main" class="content">
+    <article>
+      <div class="crumbs"><a href="/app-docs/weighbridge/">Docs</a> <span>/</span> Troubleshooting</div><h1>Fix common problems</h1><p class="lead">What you see, what it means, and what to do. Start at the top of the table.</p>
+      <h2 id="quick-fixes"><a class="anchor" href="#quick-fixes" aria-label="Link to this section">#</a>Quick fixes</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>What you see</th>
+<th>What it means</th>
+<th>What to do</th>
+</tr>
+</thead><tbody><tr>
+<td><strong>Starting Weighbridge…</strong> stays on screen</td>
+<td>The app is waiting for its database to wake up. This is normal for a few seconds after Windows starts.</td>
+<td>Wait. It opens by itself. After about 20 seconds it explains the problem and keeps retrying.</td>
+</tr>
+<tr>
+<td><strong>Can&#39;t connect to the database</strong></td>
+<td>SQL Server isn&#39;t running or can&#39;t be reached.</td>
+<td>Open <strong>Services</strong> on Windows and start <strong>SQL Server (…)</strong>. Press <strong>Try again</strong>. On a client computer, check the server computer is on.</td>
+</tr>
+<tr>
+<td><strong>The Weighbridge service isn&#39;t responding</strong></td>
+<td>The background service didn&#39;t start.</td>
+<td>Close and reopen the app. If it repeats, restart the computer.</td>
+</tr>
+<tr>
+<td>Weight shows <code>…</code> or <strong>Waiting for stable weight…</strong></td>
+<td>No weight is coming from the scale, or it isn&#39;t steady.</td>
+<td>Check the indicator is on and the cable is in. See <a href="/app-docs/weighbridge/scale/">Weighbridge and COM port</a>.</td>
+</tr>
+<tr>
+<td><strong>Activate Weighbridge</strong> appears on a computer that worked yesterday</td>
+<td>The license couldn&#39;t be checked for longer than its grace period, or it has expired.</td>
+<td>Check the internet, then press <strong>Activate</strong>/<strong>Check now</strong>. If the license expired, contact Mochan Labs. See <a href="/app-docs/weighbridge/license-renewal/">License renewal</a>.</td>
+</tr>
+<tr>
+<td><strong>Tally Sync</strong> says Tally can&#39;t be reached</td>
+<td>Tally isn&#39;t open, or Host/Port are wrong.</td>
+<td>Open Tally with the company loaded, then use <strong>Test Connection</strong> in <a href="/app-docs/weighbridge/tally/">Tally</a>.</td>
+</tr>
+<tr>
+<td>Receipts print the wrong size</td>
+<td>Paper setting doesn&#39;t match the printer.</td>
+<td><a href="/app-docs/weighbridge/printer/">Printer and slip layout</a>: choose A4 or the right roll size.</td>
+</tr>
+<tr>
+<td>A report is empty</td>
+<td>The date range doesn&#39;t cover the day you want.</td>
+<td>Widen <strong>From</strong> and <strong>To</strong>. See <a href="/app-docs/weighbridge/reports/">Reports</a>.</td>
+</tr>
+<tr>
+<td>A user can&#39;t see a screen</td>
+<td>Their role doesn&#39;t have access.</td>
+<td>An administrator changes it in <a href="/app-docs/weighbridge/users/">Users, roles and permissions</a>.</td>
+</tr>
+<tr>
+<td>Update message appears</td>
+<td>A new version is available.</td>
+<td>Choose to download. Keep working. Restart when asked. See <a href="/app-docs/weighbridge/updates/">Update the app</a>.</td>
+</tr>
+</tbody></table></div>
+<p><figure class="shot"><button type="button" class="zoom" aria-label="Enlarge screenshot"><img src="/app-docs/weighbridge/img/startup-loader.png" alt="The start-up screen" loading="lazy"></button><figcaption>Starting Weighbridge… while the database connects.</figcaption></figure></p>
+<p><figure class="shot"><button type="button" class="zoom" aria-label="Enlarge screenshot"><img src="/app-docs/weighbridge/img/startup-problem.png" alt="The &amp;#39;can&amp;#39;t connect&amp;#39; message" loading="lazy"></button><figcaption>If it takes more than ~20 seconds, the app says what is wrong and keeps trying.</figcaption></figure></p>
+<h2 id="i-am-locked-out-of-the-admin-account"><a class="anchor" href="#i-am-locked-out-of-the-admin-account" aria-label="Link to this section">#</a>I am locked out of the Admin account</h2>
+<p>Open <strong>Command Prompt as administrator</strong> on the Weighbridge computer and run:</p>
+<pre><code>&quot;C:\Program Files\Weighbridge\resources\api\Weighbridge.Api.exe&quot; --reset-admin-password
+</code></pre>
+<p>This sets the <code>Admin</code> password back to <code>Admin@123</code> and asks for a new one at the next sign-in.</p>
+<h2 id="check-what-the-database-holds"><a class="anchor" href="#check-what-the-database-holds" aria-label="Link to this section">#</a>Check what the database holds</h2>
+<pre><code>&quot;C:\Program Files\Weighbridge\resources\api\Weighbridge.Api.exe&quot; --diagnose-database
+</code></pre>
+<p>It prints which SQL Server instance the app uses and how many users, parties and vehicles it holds.</p>
+<h2 id="where-the-logs-are"><a class="anchor" href="#where-the-logs-are" aria-label="Link to this section">#</a>Where the logs are</h2>
+<p>The app writes its log files to <code>%LOCALAPPDATA%\Weighbridge\logs</code>. Send the newest file to <a href="/app-docs/weighbridge/support/">support</a> with a short description of what you were doing.</p>
+
+    </article>
+    <nav class="pager" aria-label="Previous and next"><a class="prev" href="/app-docs/weighbridge/receipts/"><span>Previous</span>Print and reprint receipts</a><a class="next" href="/app-docs/weighbridge/company/"><span>Next</span>Company details</a></nav>
+    <footer class="foot">
+      <span>© 2026 Mochan Labs · <a href="https://mochanlabs.com" target="_blank" rel="noopener">mochanlabs.com</a> · <a href="mailto:mochanlabs@gmail.com">mochanlabs@gmail.com</a></span>
+      <span>Applies to Weighbridge 0.2.x</span>
+    </footer>
+  </main>
+  <aside class="toc-col"><nav class="toc" aria-label="On this page"><div class="toc-title">On this page</div><ul><li class="l2"><a href="#quick-fixes">Quick fixes</a></li><li class="l2"><a href="#i-am-locked-out-of-the-admin-account">I am locked out of the Admin account</a></li><li class="l2"><a href="#check-what-the-database-holds">Check what the database holds</a></li><li class="l2"><a href="#where-the-logs-are">Where the logs are</a></li></ul></nav></aside>
+</div>
+<div id="lightbox" class="lightbox" hidden><img alt=""><button type="button" aria-label="Close">×</button></div>
+<script src="/app-docs/weighbridge/assets/docs.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-base="/app-docs/weighbridge">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Printer and slip layout — Weighbridge Docs</title>
+<meta name="description" content="Paper size, copies, the weight unit, and the wording printed on slips and invoices.">
+<script>try{var t=localStorage.getItem('wb-docs-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="stylesheet" href="/app-docs/weighbridge/assets/docs.css">
+<link rel="icon" type="image/png" href="/app-docs/weighbridge/assets/favicon.png">
+<link rel="apple-touch-icon" href="/app-docs/weighbridge/assets/logo.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <button type="button" class="icon-btn menu-btn" aria-label="Open navigation" aria-controls="sidebar">☰</button>
+  <a class="brand" href="/app-docs/weighbridge/"><img src="/app-docs/weighbridge/assets/logo.png" alt="" width="32" height="32"><span>Weighbridge <em>Docs</em></span></a>
+  <div class="search">
+    <input id="q" type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search the docs">
+    <kbd>/</kbd>
+    <div id="results" class="results" hidden></div>
+  </div>
+  <button type="button" class="icon-btn theme-btn" aria-label="Switch light / dark">◐</button>
+</header>
+<div class="shell">
+  <aside id="sidebar" class="sidebar" aria-label="Documentation">
+    <a class="nav-home" href="/app-docs/weighbridge/">Overview</a>
+    <div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Start here<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/install/">Install Weighbridge</a></li><li><a href="/app-docs/weighbridge/activate/">Activate your license</a></li><li><a href="/app-docs/weighbridge/sign-in/">Sign in and change your password</a></li><li><a href="/app-docs/weighbridge/tour/">A quick tour of the screens</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Daily work<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/weigh/">Weigh a vehicle</a></li><li><a href="/app-docs/weighbridge/sell/">Bill a sale</a></li><li><a href="/app-docs/weighbridge/purchase/">Record a purchase</a></li><li><a href="/app-docs/weighbridge/receipts/">Print and reprint receipts</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Troubleshooting<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/troubleshooting/">Fix common problems</a></li></ul></div>
+<div class="nav-group open"><button type="button" class="nav-cat" aria-expanded="true">Setup<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/company/">Company details</a></li><li><a href="/app-docs/weighbridge/scale/">Weighbridge and COM port</a></li><li><a href="/app-docs/weighbridge/materials/">Materials, GST and HSN</a></li><li><a href="/app-docs/weighbridge/parties/">Parties and party rates</a></li><li><a href="/app-docs/weighbridge/vehicles/">Vehicles</a></li><li><a href="/app-docs/weighbridge/printer/" aria-current="page">Printer and slip layout</a></li><li><a href="/app-docs/weighbridge/users/">Users, roles and permissions</a></li><li><a href="/app-docs/weighbridge/workflow/">Workflow settings</a></li><li><a href="/app-docs/weighbridge/cameras-rfid/">Cameras and RFID</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Integrations<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/tally/">Tally</a></li><li><a href="/app-docs/weighbridge/government/">Government portal (MDTSS)</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Reports &amp; records<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/reports/">Reports</a></li><li><a href="/app-docs/weighbridge/sync-status/">Sync status</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Looking after the system<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/backups/">Back up your data</a></li><li><a href="/app-docs/weighbridge/updates/">Update the app</a></li><li><a href="/app-docs/weighbridge/license-renewal/">License renewal and expiry notices</a></li><li><a href="/app-docs/weighbridge/multi-machine/">Use more than one computer</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Reference<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/glossary/">Glossary</a></li><li><a href="/app-docs/weighbridge/support/">Get help</a></li></ul></div>
+  </aside>
+  <div class="scrim" hidden></div>
+  <main id="main" class="content">
+    <article>
+      <div class="crumbs"><a href="/app-docs/weighbridge/">Docs</a> <span>/</span> Setup</div><h1>Printer and slip layout</h1><p class="lead">Paper size, copies, the weight unit, and the wording printed on slips and invoices.</p>
+      <p>Open <strong>Administration → Printer and slip layout</strong>.</p>
+<p><figure class="shot"><button type="button" class="zoom" aria-label="Enlarge screenshot"><img src="/app-docs/weighbridge/img/printer.png" alt="Printer and slip layout" loading="lazy"></button><figcaption>Paper, copies per sheet and the unit used on slips, invoices and billing.</figcaption></figure></p>
+<h2 id="paper"><a class="anchor" href="#paper" aria-label="Link to this section">#</a>Paper</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>Choice</th>
+<th>Use it for</th>
+</tr>
+</thead><tbody><tr>
+<td><strong>Normal sheet (A4 / Letter)</strong></td>
+<td>Any ordinary printer. The <strong>Print</strong> button opens the usual Windows print dialog.</td>
+</tr>
+<tr>
+<td><strong>Thermal receipt roll, 80 mm or 58 mm</strong></td>
+<td>A receipt printer. Pick the <strong>Thermal printer</strong> from the list and receipts print straight to it, with no dialog.</td>
+</tr>
+</tbody></table></div>
+<p>On A4, <strong>Copies per sheet</strong> sets how many copies sit side by side (2 gives two copies on a landscape sheet).</p>
+<div class="callout callout-note"><div class="callout-title">Note</div><p>Thermal printing straight to the printer works in the installed Weighbridge app. In a plain browser tab, the normal print dialog is used.</p>
+</div>
+
+
+<h2 id="unit-for-slips-invoices-and-billing"><a class="anchor" href="#unit-for-slips-invoices-and-billing" aria-label="Link to this section">#</a>Unit for slips, invoices and billing</h2>
+<p>Choose <strong>Kilograms</strong>, <strong>Quintals (1 Qtl = 100 kg)</strong> or <strong>Tonnes (1 t = 1000 kg)</strong>.</p>
+<p>This changes only <strong>how weights are shown and billed</strong>: on slips, on invoices, in the quantity filled in at billing, and in the quantity sent to Tally. The weighbridge always measures and stores kilograms, and the government portal always receives kilograms.</p>
+<div class="callout callout-warn"><div class="callout-title">Important</div><p>Set the unit <strong>before</strong> you start billing and keep it. Rates are per this unit. A rate of 70 per Qtl billed in kg would be wrong by 100 times.</p>
+</div>
+
+
+<h2 id="wording"><a class="anchor" href="#wording" aria-label="Link to this section">#</a>Wording</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>Field</th>
+<th>Where it prints</th>
+</tr>
+</thead><tbody><tr>
+<td><strong>Show the weight unit on printed slips</strong></td>
+<td>Heading of the weight column, for example <em>Weight (Qtl)</em>.</td>
+</tr>
+<tr>
+<td><strong>Footer note</strong></td>
+<td>Bottom of every slip.</td>
+</tr>
+<tr>
+<td><strong>Weight slip terms</strong></td>
+<td>The numbered notes at the foot of the slip.</td>
+</tr>
+<tr>
+<td><strong>Invoice tagline</strong></td>
+<td>Under the company address on the tax invoice.</td>
+</tr>
+<tr>
+<td><strong>Invoice terms</strong></td>
+<td>The terms at the foot of the tax invoice.</td>
+</tr>
+<tr>
+<td><strong>Vehicle photos on slip</strong></td>
+<td>Whether vehicle photos are printed on the slip.</td>
+</tr>
+</tbody></table></div>
+<p>Press <strong>Save</strong>. See the results in <a href="/app-docs/weighbridge/receipts/">Print and reprint receipts</a>.</p>
+
+    </article>
+    <nav class="pager" aria-label="Previous and next"><a class="prev" href="/app-docs/weighbridge/vehicles/"><span>Previous</span>Vehicles</a><a class="next" href="/app-docs/weighbridge/users/"><span>Next</span>Users, roles and permissions</a></nav>
+    <footer class="foot">
+      <span>© 2026 Mochan Labs · <a href="https://mochanlabs.com" target="_blank" rel="noopener">mochanlabs.com</a> · <a href="mailto:mochanlabs@gmail.com">mochanlabs@gmail.com</a></span>
+      <span>Applies to Weighbridge 0.2.x</span>
+    </footer>
+  </main>
+  <aside class="toc-col"><nav class="toc" aria-label="On this page"><div class="toc-title">On this page</div><ul><li class="l2"><a href="#paper">Paper</a></li><li class="l2"><a href="#unit-for-slips-invoices-and-billing">Unit for slips, invoices and billing</a></li><li class="l2"><a href="#wording">Wording</a></li></ul></nav></aside>
+</div>
+<div id="lightbox" class="lightbox" hidden><img alt=""><button type="button" aria-label="Close">×</button></div>
+<script src="/app-docs/weighbridge/assets/docs.js"></script>
+</body>
+</html>

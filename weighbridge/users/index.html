@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-base="/app-docs/weighbridge">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Users, roles and permissions — Weighbridge Docs</title>
+<meta name="description" content="Who can sign in, and what each person is allowed to see and do.">
+<script>try{var t=localStorage.getItem('wb-docs-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="stylesheet" href="/app-docs/weighbridge/assets/docs.css">
+<link rel="icon" type="image/png" href="/app-docs/weighbridge/assets/favicon.png">
+<link rel="apple-touch-icon" href="/app-docs/weighbridge/assets/logo.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <button type="button" class="icon-btn menu-btn" aria-label="Open navigation" aria-controls="sidebar">☰</button>
+  <a class="brand" href="/app-docs/weighbridge/"><img src="/app-docs/weighbridge/assets/logo.png" alt="" width="32" height="32"><span>Weighbridge <em>Docs</em></span></a>
+  <div class="search">
+    <input id="q" type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search the docs">
+    <kbd>/</kbd>
+    <div id="results" class="results" hidden></div>
+  </div>
+  <button type="button" class="icon-btn theme-btn" aria-label="Switch light / dark">◐</button>
+</header>
+<div class="shell">
+  <aside id="sidebar" class="sidebar" aria-label="Documentation">
+    <a class="nav-home" href="/app-docs/weighbridge/">Overview</a>
+    <div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Start here<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/install/">Install Weighbridge</a></li><li><a href="/app-docs/weighbridge/activate/">Activate your license</a></li><li><a href="/app-docs/weighbridge/sign-in/">Sign in and change your password</a></li><li><a href="/app-docs/weighbridge/tour/">A quick tour of the screens</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Daily work<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/weigh/">Weigh a vehicle</a></li><li><a href="/app-docs/weighbridge/sell/">Bill a sale</a></li><li><a href="/app-docs/weighbridge/purchase/">Record a purchase</a></li><li><a href="/app-docs/weighbridge/receipts/">Print and reprint receipts</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Troubleshooting<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/troubleshooting/">Fix common problems</a></li></ul></div>
+<div class="nav-group open"><button type="button" class="nav-cat" aria-expanded="true">Setup<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/company/">Company details</a></li><li><a href="/app-docs/weighbridge/scale/">Weighbridge and COM port</a></li><li><a href="/app-docs/weighbridge/materials/">Materials, GST and HSN</a></li><li><a href="/app-docs/weighbridge/parties/">Parties and party rates</a></li><li><a href="/app-docs/weighbridge/vehicles/">Vehicles</a></li><li><a href="/app-docs/weighbridge/printer/">Printer and slip layout</a></li><li><a href="/app-docs/weighbridge/users/" aria-current="page">Users, roles and permissions</a></li><li><a href="/app-docs/weighbridge/workflow/">Workflow settings</a></li><li><a href="/app-docs/weighbridge/cameras-rfid/">Cameras and RFID</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Integrations<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/tally/">Tally</a></li><li><a href="/app-docs/weighbridge/government/">Government portal (MDTSS)</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Reports &amp; records<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/reports/">Reports</a></li><li><a href="/app-docs/weighbridge/sync-status/">Sync status</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Looking after the system<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/backups/">Back up your data</a></li><li><a href="/app-docs/weighbridge/updates/">Update the app</a></li><li><a href="/app-docs/weighbridge/license-renewal/">License renewal and expiry notices</a></li><li><a href="/app-docs/weighbridge/multi-machine/">Use more than one computer</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Reference<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/glossary/">Glossary</a></li><li><a href="/app-docs/weighbridge/support/">Get help</a></li></ul></div>
+  </aside>
+  <div class="scrim" hidden></div>
+  <main id="main" class="content">
+    <article>
+      <div class="crumbs"><a href="/app-docs/weighbridge/">Docs</a> <span>/</span> Setup</div><h1>Users, roles and permissions</h1><p class="lead">Who can sign in, and what each person is allowed to see and do.</p>
+      <h2 id="users"><a class="anchor" href="#users" aria-label="Link to this section">#</a>Users</h2>
+<p>Open <strong>Administration → Users</strong>.</p>
+<p><figure class="shot"><button type="button" class="zoom" aria-label="Enlarge screenshot"><img src="/app-docs/weighbridge/img/users.png" alt="Users" loading="lazy"></button><figcaption>Each user has a role, a status and the time of their last login.</figcaption></figure></p>
+<div class="table-wrap"><table><thead><tr>
+<th>Action</th>
+<th>How</th>
+</tr>
+</thead><tbody><tr>
+<td><strong>Add a user</strong></td>
+<td>Press <strong>Add user</strong>, enter a <strong>Username</strong>, a <strong>Role</strong> and an <strong>Initial password</strong>. The status shows <strong>Temp password</strong> until the person sets their own at first sign-in.</td>
+</tr>
+<tr>
+<td><strong>Change a role</strong></td>
+<td>Pick another role in the <strong>Role</strong> column.</td>
+</tr>
+<tr>
+<td><strong>Lock or unlock</strong></td>
+<td>The padlock icon. A locked user can&#39;t sign in (status <strong>Locked</strong>). Accounts also lock after 5 wrong passwords.</td>
+</tr>
+<tr>
+<td><strong>Reset a password</strong></td>
+<td>The key icon. The person sets a new one at the next sign-in.</td>
+</tr>
+<tr>
+<td><strong>Remove</strong></td>
+<td>The bin icon. The user can no longer sign in.</td>
+</tr>
+</tbody></table></div>
+<h2 id="roles-and-permissions"><a class="anchor" href="#roles-and-permissions" aria-label="Link to this section">#</a>Roles and permissions</h2>
+<p>Open <strong>Administration → Roles and permissions</strong>. Choose a role on the left. On the right is a grid of every screen with six switches:</p>
+<div class="table-wrap"><table><thead><tr>
+<th>Permission</th>
+<th>Lets the person…</th>
+</tr>
+</thead><tbody><tr>
+<td><strong>View</strong></td>
+<td>Open the screen and see its data.</td>
+</tr>
+<tr>
+<td><strong>Create</strong></td>
+<td>Add new records.</td>
+</tr>
+<tr>
+<td><strong>Edit</strong></td>
+<td>Change existing records.</td>
+</tr>
+<tr>
+<td><strong>Delete</strong></td>
+<td>Remove records.</td>
+</tr>
+<tr>
+<td><strong>Print</strong></td>
+<td>Print from the screen.</td>
+</tr>
+<tr>
+<td><strong>Approve override</strong></td>
+<td>Do exceptional things, for example enter a weight by hand on the Token page.</td>
+</tr>
+</tbody></table></div>
+<p><figure class="shot"><button type="button" class="zoom" aria-label="Enlarge screenshot"><img src="/app-docs/weighbridge/img/roles.png" alt="Roles and permissions" loading="lazy"></button><figcaption>Tick what each role may do. Press + to create a new role.</figcaption></figure></p>
+<p>Press <strong>+</strong> to create a role, for example <em>Weighbridge operator</em>, and tick only what that job needs. Changes apply to everyone in the role straight away.</p>
+<div class="callout callout-tip"><div class="callout-title">Tip</div><p>Give operators <strong>View</strong>, <strong>Create</strong> and <strong>Print</strong> on Token, Sale and Purchase only, and keep <strong>Approve override</strong> for a supervisor.</p>
+</div>
+
+
+    </article>
+    <nav class="pager" aria-label="Previous and next"><a class="prev" href="/app-docs/weighbridge/printer/"><span>Previous</span>Printer and slip layout</a><a class="next" href="/app-docs/weighbridge/workflow/"><span>Next</span>Workflow settings</a></nav>
+    <footer class="foot">
+      <span>© 2026 Mochan Labs · <a href="https://mochanlabs.com" target="_blank" rel="noopener">mochanlabs.com</a> · <a href="mailto:mochanlabs@gmail.com">mochanlabs@gmail.com</a></span>
+      <span>Applies to Weighbridge 0.2.x</span>
+    </footer>
+  </main>
+  <aside class="toc-col"></aside>
+</div>
+<div id="lightbox" class="lightbox" hidden><img alt=""><button type="button" aria-label="Close">×</button></div>
+<script src="/app-docs/weighbridge/assets/docs.js"></script>
+</body>
+</html>

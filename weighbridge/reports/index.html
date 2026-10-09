@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-base="/app-docs/weighbridge">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reports — Weighbridge Docs</title>
+<meta name="description" content="Daily log, sale and purchase registers, and how to export them to Excel or PDF.">
+<script>try{var t=localStorage.getItem('wb-docs-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="stylesheet" href="/app-docs/weighbridge/assets/docs.css">
+<link rel="icon" type="image/png" href="/app-docs/weighbridge/assets/favicon.png">
+<link rel="apple-touch-icon" href="/app-docs/weighbridge/assets/logo.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <button type="button" class="icon-btn menu-btn" aria-label="Open navigation" aria-controls="sidebar">☰</button>
+  <a class="brand" href="/app-docs/weighbridge/"><img src="/app-docs/weighbridge/assets/logo.png" alt="" width="32" height="32"><span>Weighbridge <em>Docs</em></span></a>
+  <div class="search">
+    <input id="q" type="search" placeholder="Search the docs…" autocomplete="off" aria-label="Search the docs">
+    <kbd>/</kbd>
+    <div id="results" class="results" hidden></div>
+  </div>
+  <button type="button" class="icon-btn theme-btn" aria-label="Switch light / dark">◐</button>
+</header>
+<div class="shell">
+  <aside id="sidebar" class="sidebar" aria-label="Documentation">
+    <a class="nav-home" href="/app-docs/weighbridge/">Overview</a>
+    <div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Start here<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/install/">Install Weighbridge</a></li><li><a href="/app-docs/weighbridge/activate/">Activate your license</a></li><li><a href="/app-docs/weighbridge/sign-in/">Sign in and change your password</a></li><li><a href="/app-docs/weighbridge/tour/">A quick tour of the screens</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Daily work<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/weigh/">Weigh a vehicle</a></li><li><a href="/app-docs/weighbridge/sell/">Bill a sale</a></li><li><a href="/app-docs/weighbridge/purchase/">Record a purchase</a></li><li><a href="/app-docs/weighbridge/receipts/">Print and reprint receipts</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Troubleshooting<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/troubleshooting/">Fix common problems</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Setup<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/company/">Company details</a></li><li><a href="/app-docs/weighbridge/scale/">Weighbridge and COM port</a></li><li><a href="/app-docs/weighbridge/materials/">Materials, GST and HSN</a></li><li><a href="/app-docs/weighbridge/parties/">Parties and party rates</a></li><li><a href="/app-docs/weighbridge/vehicles/">Vehicles</a></li><li><a href="/app-docs/weighbridge/printer/">Printer and slip layout</a></li><li><a href="/app-docs/weighbridge/users/">Users, roles and permissions</a></li><li><a href="/app-docs/weighbridge/workflow/">Workflow settings</a></li><li><a href="/app-docs/weighbridge/cameras-rfid/">Cameras and RFID</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Integrations<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/tally/">Tally</a></li><li><a href="/app-docs/weighbridge/government/">Government portal (MDTSS)</a></li></ul></div>
+<div class="nav-group open"><button type="button" class="nav-cat" aria-expanded="true">Reports &amp; records<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/reports/" aria-current="page">Reports</a></li><li><a href="/app-docs/weighbridge/sync-status/">Sync status</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Looking after the system<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/backups/">Back up your data</a></li><li><a href="/app-docs/weighbridge/updates/">Update the app</a></li><li><a href="/app-docs/weighbridge/license-renewal/">License renewal and expiry notices</a></li><li><a href="/app-docs/weighbridge/multi-machine/">Use more than one computer</a></li></ul></div>
+<div class="nav-group"><button type="button" class="nav-cat" aria-expanded="false">Reference<span class="chev" aria-hidden="true"></span></button><ul><li><a href="/app-docs/weighbridge/glossary/">Glossary</a></li><li><a href="/app-docs/weighbridge/support/">Get help</a></li></ul></div>
+  </aside>
+  <div class="scrim" hidden></div>
+  <main id="main" class="content">
+    <article>
+      <div class="crumbs"><a href="/app-docs/weighbridge/">Docs</a> <span>/</span> Reports &amp; records</div><h1>Reports</h1><p class="lead">Daily log, sale and purchase registers, and how to export them to Excel or PDF.</p>
+      <p>Open the <strong>Reports</strong> menu. Every report has an <strong>Export</strong> button (Excel or PDF) and a date range or date picker. If a report looks empty, widen the dates first.</p>
+<h2 id="daily-log"><a class="anchor" href="#daily-log" aria-label="Link to this section">#</a>Daily Log</h2>
+<p>Everything that happened on one day. Choose a <strong>Date</strong>, then switch between two tabs:</p>
+<ul>
+<li><strong>Weighment Log</strong>: each completed weighing with direction (<strong>Inward</strong>/<strong>Outward</strong>), time, vehicle, material, party, <strong>Gross</strong>, <strong>Tare</strong> and <strong>Net</strong>.</li>
+<li><strong>Token Log</strong>: every token, including ones still open.</li>
+</ul>
+<p><figure class="shot"><button type="button" class="zoom" aria-label="Enlarge screenshot"><img src="/app-docs/weighbridge/img/daily-log.png" alt="Daily Log" loading="lazy"></button><figcaption>A day&amp;#39;s weighments at a glance.</figcaption></figure></p>
+<h2 id="sale-reports"><a class="anchor" href="#sale-reports" aria-label="Link to this section">#</a>Sale Reports</h2>
+<p>Choose <strong>From</strong>, <strong>To</strong> and optionally a <strong>Party</strong>. Tabs: <strong>Sale List</strong>, <strong>Product Wise</strong>, <strong>User Wise</strong> and <strong>Kaanta Charges</strong>.</p>
+<p><figure class="shot"><button type="button" class="zoom" aria-label="Enlarge screenshot"><img src="/app-docs/weighbridge/img/sale-reports.png" alt="Sale Reports" loading="lazy"></button><figcaption>Invoice, date, vehicle, material, party, weights and amount.</figcaption></figure></p>
+<h2 id="purchase-reports"><a class="anchor" href="#purchase-reports" aria-label="Link to this section">#</a>Purchase Reports</h2>
+<p>Choose <strong>From</strong> and <strong>To</strong>. Tabs: <strong>Purchase List</strong>, <strong>Summary</strong>, <strong>Gate Wise</strong>, <strong>Division Wise</strong>, <strong>Vehicle Wise</strong>, <strong>Balance Report</strong> and <strong>Vehicle Summary</strong>. The list shows net weight, amount, GST, net amount, gate, division, owner and PAN, with a <strong>Total Net Amt</strong>.</p>
+<p><figure class="shot"><button type="button" class="zoom" aria-label="Enlarge screenshot"><img src="/app-docs/weighbridge/img/purchase-reports.png" alt="Purchase Reports" loading="lazy"></button><figcaption>Purchases with GST and net amounts.</figcaption></figure></p>
+<h2 id="other-reports"><a class="anchor" href="#other-reports" aria-label="Link to this section">#</a>Other reports</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>Report</th>
+<th>What it shows</th>
+</tr>
+</thead><tbody><tr>
+<td><strong>Client List</strong></td>
+<td>Your parties and their details.</td>
+</tr>
+<tr>
+<td><strong>Vehicle History</strong></td>
+<td>Every weighing for one vehicle.</td>
+</tr>
+<tr>
+<td><strong>Audit Log</strong></td>
+<td>Who did what and when: sign-ins, changes and manual-weight overrides.</td>
+</tr>
+<tr>
+<td><strong>MDTSS Sync Status</strong></td>
+<td>See <a href="/app-docs/weighbridge/sync-status/">Sync status</a>.</td>
+</tr>
+</tbody></table></div>
+<div class="callout callout-tip"><div class="callout-title">Tip</div><p>Export before you change a master record you want to compare, for example parties or rates.</p>
+</div>
+
+
+    </article>
+    <nav class="pager" aria-label="Previous and next"><a class="prev" href="/app-docs/weighbridge/government/"><span>Previous</span>Government portal (MDTSS)</a><a class="next" href="/app-docs/weighbridge/sync-status/"><span>Next</span>Sync status</a></nav>
+    <footer class="foot">
+      <span>© 2026 Mochan Labs · <a href="https://mochanlabs.com" target="_blank" rel="noopener">mochanlabs.com</a> · <a href="mailto:mochanlabs@gmail.com">mochanlabs@gmail.com</a></span>
+      <span>Applies to Weighbridge 0.2.x</span>
+    </footer>
+  </main>
+  <aside class="toc-col"><nav class="toc" aria-label="On this page"><div class="toc-title">On this page</div><ul><li class="l2"><a href="#daily-log">Daily Log</a></li><li class="l2"><a href="#sale-reports">Sale Reports</a></li><li class="l2"><a href="#purchase-reports">Purchase Reports</a></li><li class="l2"><a href="#other-reports">Other reports</a></li></ul></nav></aside>
+</div>
+<div id="lightbox" class="lightbox" hidden><img alt=""><button type="button" aria-label="Close">×</button></div>
+<script src="/app-docs/weighbridge/assets/docs.js"></script>
+</body>
+</html>
